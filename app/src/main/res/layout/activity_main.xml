@@ -59,7 +59,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="162dp"
         android:layout_marginBottom="109dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/practice"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gite" />
@@ -78,18 +78,18 @@
         app:layout_constraintVertical_bias="0.533" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/practice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="25dp"
         android:text="Practice"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/exam"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/exam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="168dp"
@@ -97,7 +97,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="@+id/practice"
+        app:layout_constraintTop_toBottomOf="@+id/practice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
