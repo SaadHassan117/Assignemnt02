@@ -34,6 +34,7 @@ Button exame;
             public void onClick(View v) {
                 Intent intent;
                 intent = new Intent(MainActivity.this, MainActivity2.class);
+
                 startActivity(intent);
 
             }
