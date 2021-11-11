@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 public class MainActivity3 extends AppCompatActivity {
     RadioButton one,two,three,four;
     Button bte;
+    int count;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
                   Intent intent;
                 intent = new Intent(MainActivity3.this, nexttask.class);
+                intent.putExtra("value", count);
                 startActivity(intent);
             }
         });
@@ -45,28 +47,29 @@ public class MainActivity3 extends AppCompatActivity {
             two.setEnabled(false);
             three.setEnabled(false);
             four.setEnabled(false);
-            btn.setBackgroundColor(Color.GREEN);
+            //btn.setBackgroundColor(Color.GREEN);
+            count++;
         }
         if (text.equals( "Middle of Throat"))
         {
             one.setEnabled(false);
             three.setEnabled(false);
             four.setEnabled(false);
-            btn.setBackgroundColor(Color.GREEN);
+           // btn.setBackgroundColor(Color.GREEN);
         }
         if (text.equals( "Start  of Throat"))
         {
             one.setEnabled(false);
             two.setEnabled(false);
             four.setEnabled(false);
-            btn.setBackgroundColor(Color.GREEN);
+            //btn.setBackgroundColor(Color.GREEN);
         }
         if (text.equals( "None of Above"))
         {
             two.setEnabled(false);
             three.setEnabled(false);
             one.setEnabled(false);
-            btn.setBackgroundColor(Color.GREEN);
+            //btn.setBackgroundColor(Color.GREEN);
         }
     }
 }
