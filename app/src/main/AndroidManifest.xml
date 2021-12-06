@@ -20,9 +20,11 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity3"
+            android:parentActivityName="com.example.myapplication.MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
+            android:parentActivityName="com.example.myapplication.MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
