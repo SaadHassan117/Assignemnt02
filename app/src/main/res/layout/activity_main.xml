@@ -100,4 +100,17 @@
         app:layout_constraintStart_toStartOf="@+id/practice"
         app:layout_constraintTop_toBottomOf="@+id/practice" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="401dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="App Bar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

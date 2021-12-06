@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 Button rep;
 Button prac;
 Button exame;
+Toolbar obj;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,8 @@ Button exame;
         rep=findViewById(R.id.button);
         prac=findViewById(R.id.practice);
         exame=findViewById(R.id.exam);
+        obj=findViewById(R.id.toolbar);
+        setSupportActionBar(obj);
         rep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
